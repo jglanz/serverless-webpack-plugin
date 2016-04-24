@@ -39,6 +39,26 @@ plugins: [
 }
 
 ```
+* -or- in the case that you use serverless programmatically or 
+	want to embed a configuration, you simply make sure a _config_ object 
+	is in the webpack element
+
+
+```javascript
+{
+    ...
+    "custom": {
+        "webpack": {
+            "config": {
+                ... your config here ...
+            }
+        }
+    }
+    ...
+}
+
+```
+
 
 
 ## Webpack config
